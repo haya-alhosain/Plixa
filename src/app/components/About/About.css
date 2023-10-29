@@ -1,0 +1,118 @@
+.about-content {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 122px;
+  color: var(--black-color);
+  position: relative;
+}
+.about-content .about-content-info {
+  width: 50%;
+  text-align: justify;
+  gap: 16px;
+}
+.about-content .about-content-info .description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.about-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.96px;
+}
+.about-content h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+.about-content-steps h2 {
+  color: #fffbfe;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 21px;
+  margin-top: -69px;
+}
+.about-content-steps .steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.about-content-steps .steps div p {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.96px;
+  padding-bottom: 30px;
+}
+.about-content-steps .steps div {
+  position: relative;
+}
+.about-content-steps .steps div span {
+  position: absolute;
+  color: rgba(79, 78, 78, 0.15);
+  font-size: 64.8px;
+  font-weight: 400;
+  top: -21px;
+  left: -36px;
+}
+.about-content-steps .steps div .step-b {
+  position: absolute;
+  color: rgba(79, 78, 78, 0.15);
+  font-size: 64.8px;
+  font-weight: 400;
+  top: -2px;
+  left: -36px;
+}
+.about-content-steps .steps div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    #551765 0%,
+    rgba(85, 23, 101, 0.4) 41.26%,
+    rgba(101, 23, 79, 0.4) 66.53%,
+    #65174f 99.02%
+  );
+}
+
+/* ========================================================================= */
+
+.about-content::after {
+  background: rgba(85, 23, 101, 0.48);
+  width: 350px;
+  height: 350px;
+  border-radius: 350px;
+  flex-shrink: 0;
+  z-index: -1;
+}
+.about-content::after {
+  content: "";
+  left: 30%;
+  bottom: -65%;
+  position: absolute;
+  filter: blur(45px);
+  transform: translateZ(0);
+}
+/* =========================================================================== */
+@media (max-width: 900px) {
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .about-content .about-content-info {
+    width: 100%;
+  }
+  .about-content p {
+    font-size: 14px;
+  }
+  .about-content h3 {
+    font-size: 18px;
+    font-weight: 800;
+  }
+}
