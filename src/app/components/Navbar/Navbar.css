@@ -2,7 +2,7 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 35px;
+  padding: 40px 0 25px;
 }
 nav .nav-items {
   display: flex;
@@ -16,5 +16,56 @@ nav .nav-items .link {
   transition: 0.3s all ease-in;
 }
 nav .nav-items .link:hover {
-  color: var(--white);
+  color: var(--light);
+}
+
+.select-menu .select-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: var(--gray-color);
+}
+.select-menu .select-btn span {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.select-menu .options {
+  position: relative;
+}
+.select-menu .options .option {
+  position: absolute;
+  background-color: var(--light);
+  width: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 10px;
+}
+.select-menu .options .option:hover {
+  /* background-color: var(--main-color); */
+  color: #fff;
+  transition: 0.2s;
+}
+.select-menu-hide {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+.nav-mobile-items {
+  display: none;
+}
+@media (max-width: 992px) {
+  nav .nav-items {
+    display: none;
+  }
+  .nav-mobile-items {
+    display: flex;
+  }
 }

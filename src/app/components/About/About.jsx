@@ -1,10 +1,10 @@
 import "./About.css";
 import MainTitle from "../mainTitle/mainTitle";
-
+import Image from "next/image";
 export default function About() {
   return (
     <>
-      <section>
+      <section className="about">
         <div className="container">
           <MainTitle title="Why Us" subtitle="Get to know us better" />
           <div className="about-content">
@@ -39,43 +39,53 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="about-content-steps">
-              <h2>How to create a free website.</h2>
-              <div className="steps">
+            <div className="about-content-about">
+              <div>
                 <div>
-                  <span>01</span>
-                  <p>
-                    Start creating your free site or store by picking a
-                    template.
-                  </p>
+                  <Image
+                    className="img-logo"
+                    src="/Icon-1.svg"
+                    alt="Next.js Logo"
+                    width={77}
+                    height={70}
+                    priority
+                  />
                 </div>
                 <div>
-                  <span>02</span>
-                  <p>
-                    Add your content, products and business info to make it
-                    yours.
-                  </p>
+                  <h4>Ai assistant</h4>
+                  <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit,</p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <Image
+                    className="img-logo"
+                    src="/Icon-1.svg"
+                    alt="Next.js Logo"
+                    width={77}
+                    height={70}
+                    priority
+                  />
                 </div>
                 <div>
-                  <span>03</span>
-                  <p>
-                    Use built-in marketing to let people know you're open for
-                    business.
-                  </p>
+                  <h4>Ai assistant</h4>
+                  <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit,</p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <Image
+                    className="img-logo"
+                    src="/Icon-1.svg"
+                    alt="Next.js Logo"
+                    width={77}
+                    height={70}
+                    priority
+                  />
                 </div>
                 <div>
-                  <span className="step-b">04</span>
-                  <p>
-                    Manage everything — reviews, orders, social — from 1
-                    dashboard, on any device.
-                  </p>
-                </div>
-                <div>
-                  <span className="step-b">05</span>
-                  <p>
-                    Buy premium features — store add-ons, SEO, appointments — as
-                    you need 'em.
-                  </p>
+                  <h4>Ai assistant</h4>
+                  <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit,</p>
                 </div>
               </div>
             </div>

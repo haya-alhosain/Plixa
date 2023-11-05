@@ -1,4 +1,4 @@
-import "./mainTitle.css";
+import "./MainTitle.css";
 export default function MainTitle({ title, subtitle }) {
   return (
     <>

@@ -1,6 +1,9 @@
 import "./Navbar.css";
 import Link from "next/link";
 import Image from "next/image";
+import { FaBars } from "react-icons/fa";
+// import { AiOutlineClose } from "react-icons/ai";
+import { BiChevronDown } from "react-icons/bi";
 const links = [
   {
     id: 1,
@@ -53,8 +56,30 @@ export default function Navbar() {
               </li>
             ))}
 
-            <button className="btn-primary">Login</button>
+            <button className="btn-primary">Log in</button>
           </ul>
+          <div className="nav-mobile-items">
+            <div className="select-menu-hide">
+              <div className="select-menu">
+                <div className="select-btn">
+                  <span className="sBtn-text">Ar</span>
+                  <BiChevronDown style={{ fontSize: "11px" }} />
+                </div>
+                {/* <ul
+                className="options"
+                style={{ display: toggleOptions ? "block" : "none" }}
+              >
+                <li className="option en" style={{ top: "10px" }}>
+                  en
+                </li>
+                <li className="option ar" style={{ top: "28px" }}>
+                  ar
+                </li>
+              </ul> */}
+              </div>
+            </div>
+            <FaBars className="toggleIcon" />
+          </div>
         </div>
       </nav>
     </>

@@ -1,6 +1,6 @@
 .main-heading {
   width: 100%;
-  margin: 21px 0 36px;
+  margin: 21px 0 52px;
 }
 .main-heading h2 {
   color: var(--white);
@@ -10,7 +10,25 @@
 }
 .main-heading p {
   color: var(--white);
+  width: 40%;
   font-size: 13px;
   font-weight: 400;
   text-transform: capitalize;
+}
+@media (max-width: 992px) {
+  .main-heading p {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .main-heading {
+    margin: 64px 0 48px;
+  }
+  .main-heading h2 {
+    font-size: 32px;
+  }
+  .main-heading p {
+    width: 100%;
+    font-size: 10px;
+  }
 }
